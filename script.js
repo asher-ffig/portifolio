@@ -17,3 +17,4 @@ if (entry.isIntersecting && !capa.classList.contains("capa-abrir")) {
   capa.classList.add("capa-abrir");
   observer.unobserve(alvo); 
 }
+
