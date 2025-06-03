@@ -348,13 +348,14 @@ p{
   width:370px;
   height:100%;
   transform-origin: left;
-  transition: all 0.8s ease-in-out;
+  transition: all 1.5s ease-in-out;
   border-top-right-radius: 38px;
   border-bottom-right-radius: 38px;
+  transform: perspective(3000px) rotateY(-10deg);
 }
 
-.texto-capa{
-  color: #FFEDCF;
+.texto-capa{ /*tô vendo ainda se compensa usar isso aqui, tomar cuidado pra não deixar sobrando no código depois!*/
+  color: #FFEDCF;   
   text-align: center;
   margin-top: 80px;
   font-size: 30px;
@@ -579,13 +580,13 @@ mark{
 
 .rodape{
   width: calc(100% - 140px);
-  height: 400px;
+  height: 100px;
   border-bottom-right-radius: 72px;
   border-bottom-left-radius: 72px;
-  margin: 1300px 70px 50px;
+  margin: 0px 70px 50px;
   position: absolute;
   z-index: -3;
-  padding: 100px 0px 40px;
+  padding: 15px 0px 40px;
   align-items: center;
   justify-content: center;
   display: flex;
