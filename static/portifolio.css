@@ -16,6 +16,8 @@ a, h1, h2, h3, p, table {
   font-optical-sizing: auto;
   font-weight: 20px;
   font-style: normal;
+  text-decoration: none;
+  color: #1c1313;
 }
 
 table{
@@ -112,7 +114,7 @@ p{
 }
 
 .sec3 {
-  background-color: #520800;
+  background-color: #7c0900;
   height: 520px;
   border-radius: 0px 0px 72px 72px;
   z-index: -2;
@@ -188,13 +190,31 @@ p{
     height: 30px;
   }
 
+  .linkedin-b{
+    background-image: url("./linkedin-b.svg");
+    width: 30px;
+    height: 30px;
+  }
+
   .email {
     background-image: url("./email.svg");
     width: 30px;
     height: 30px;
   }
 
+  .email-b{
+    background-image: url("./email-b.svg");
+    width: 30px;
+    height: 30px;
+  }
+
   .whats {
+    background-image: url("./whats.svg");
+    width: 30px;
+    height: 30px;
+  }
+
+  .whats-b{
     background-image: url("./whats.svg");
     width: 30px;
     height: 30px;
@@ -540,10 +560,30 @@ mark{
 
 .servico{
   min-width: 480px;
-  max-width: 550px;
+  max-width: 530px;
   height: auto;
-  margin: 80px 20px;
+  margin: 20px 80px;
   float: left;
+}
+
+.oferecendo {
+  height: 90px;
+  width: auto;
+  margin: 20px 0px;
+}
+
+.apps {
+  text-align: left; 
+  font-size: 14px; 
+  color: #ffedcf; 
+  margin: 10px 0px;
+}
+
+.foto-tela{
+  height: 81px; 
+  width: 81px; 
+  float: left; 
+  margin-right: 20px;
 }
 
 .desenho{
@@ -551,19 +591,8 @@ mark{
   width: 250px;
   background-color: #FF9C7D;
   border-radius: 125px;
-  margin: 40px 30px 0px;
-}
-
-.contato-extenso{
+  margin: 30px 150px;
   float: right;
-  height: 300px;
-  width: 300px;
-  margin: 60px 0px;
-}
-
-.ico-ctt-ext{
-  float: left;
-  margin: 0px 20px 0px 0px;
 }
 
 .txt-ctt-ext{
@@ -572,24 +601,22 @@ mark{
 }
 
 .link-ctt-ext{
-  display: flex;
-  justify-content: flex-start;
-  margin: 35px 0px;
+  float: left;
   width: 280px;
 }
 
 .rodape{
   width: calc(100% - 140px);
-  height: 100px;
+  height: 140px;
   border-bottom-right-radius: 72px;
   border-bottom-left-radius: 72px;
-  margin: 0px 70px 50px;
+  margin-bottom: 70px;
   position: absolute;
   z-index: -3;
-  padding: 15px 0px 40px;
   align-items: center;
   justify-content: center;
   display: flex;
+  margin: 0px 70px;
 }
 
 /*precos*/
@@ -659,7 +686,7 @@ mark{
   border-radius: 72px 72px 0px 0px;
 }
 
-.sec-precos:last-of-type{
+.sec-precos-u{
   height: 410px;
   border-radius: 72px;
 }
