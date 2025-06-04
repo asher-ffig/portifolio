@@ -215,7 +215,7 @@ p{
   }
 
   .whats-b{
-    background-image: url("./whats.svg");
+    background-image: url("./whats-b.svg");
     width: 30px;
     height: 30px;
   }
@@ -568,8 +568,20 @@ mark{
 
 .oferecendo {
   height: 90px;
-  width: auto;
-  margin: 20px 0px;
+  width: 521px;
+  margin: 10px 0px 40px 0px;
+  display: flex;
+}
+
+.img-oferecendo {
+  height: 80px;
+  width: 80px;
+  margin-right: 20px;
+}
+
+.txt-oferecendo {
+  width: 440px;
+  float: right;
 }
 
 .apps {
@@ -580,18 +592,18 @@ mark{
 }
 
 .foto-tela{
-  height: 81px; 
-  width: 81px; 
+  margin: 10px 0px;
+  height: 60px; 
+  width: 80px;
   float: left; 
-  margin-right: 20px;
 }
 
 .desenho{
   height: 350px;
-  width: 250px;
+  width: 330px;
   background-color: #FF9C7D;
   border-radius: 125px;
-  margin: 30px 150px;
+  margin: 40px 100px;
   float: right;
 }
 
@@ -602,7 +614,7 @@ mark{
 
 .link-ctt-ext{
   float: left;
-  width: 280px;
+  width: 300px;
 }
 
 .rodape{
