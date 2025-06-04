@@ -656,26 +656,30 @@ mark{
 
 .sec-precos{
   height: 450px;
-  border-radius:  72px 72px 0px 0px;
-  position: absolute;
+  border-radius: 72px 72px 0px 0px;
 }
 
-.secp2 {
-  background-color: #ff9c7d;
+.sec-precos:last-of-type{
+  height: 410px;
+  border-radius: 72px;
 }
 
-.h1-secp2{
+.h1-secp{
   margin: 0;
   font-size: 46px;
 }
 
-.h2-secp2{
+.h2-secp{
   font-size: 26px;
   font-weight: 600;
 }
 
-.p-secp2{
+.p-secp{
   margin-top: 24px;
+}
+
+.lista{
+  line-height: 35px;
 }
 
 .font-code{
@@ -696,4 +700,8 @@ mark{
 .desc-escala {
   width: 570px;
   float: right;
+}
+
+.t-bege{
+  color: #ffedcf;
 }
