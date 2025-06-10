@@ -103,34 +103,41 @@ p{
   height: 615px;
   border-radius: 72px;
   margin-top: 0px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .sec2 {
   background-color: #ff9c7d;
-  height: 740px;
+  height: 700px;
   border-radius: 0px 0px 72px 72px;
   z-index: -1;
   padding: 30px 0px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .sec3 {
   background-color: #7c0900;
-  height: 520px;
+  height: 470px;
   border-radius: 0px 0px 72px 72px;
   z-index: -2;
   align-items: center;
   justify-content: center;
+  padding-top: 72px;
 }
 
   .inicio-pags {
     height: 90%; 
-    max-width: 50%; 
-    min-width: 300px;
-    float: left;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
   }
 
   .cx-type {
-    margin: 150px 100px; 
+    margin: 150px 10px 0px;
+    max-width: 450px;
   }
 
   .type {
@@ -262,15 +269,14 @@ p{
 
   .quadriculado{
     margin-top: 35px;
-    height: 15px;
-    width: 502px;
+    height: 13px;
+    width: 448px;
     background-image: url("./quadriculado.svg");
   }
 
   .polaroid{
-    float: right; 
     min-height: 90%; 
-    min-width: 35%; 
+    min-width: 35%;
     display: flex; 
     flex-direction: row; 
     justify-content: center;
@@ -333,9 +339,8 @@ p{
   }
 
 .area-caderno{
-  float: left; 
-  min-height: 100%; 
-  min-width: 47.5%; 
+  min-height: 100%;
+  width: 435px;
   display: flex; 
   flex-direction: row; 
   justify-content: center;
@@ -641,7 +646,6 @@ mark{
 
 .cx-precos {
   margin: 30px;
-  float: right; 
   min-height: 90%; 
   min-width: 515px; 
 }
@@ -669,6 +673,11 @@ mark{
   100% {left: 0px;}
 }
 
+@keyframes btntxt-d {
+  0% {right: calc(-100% - 300px)}
+  100% {right: 0px;}
+}
+
 .btn_textos{
   left: calc(-100% - 300px);
   color: #FFEDCF;
@@ -686,11 +695,31 @@ mark{
   position: relative;
 }
 
+.btn_textos_d{
+  right: calc(-100% - 300px);
+  color: #FFEDCF;
+  margin: 10px 0px;
+  padding: 3px 10px;
+  font-family: 'Cascadia Code', serif;
+  text-decoration: none;
+  border-radius: 16px;
+  font-size: 18px;
+  animation-name: btntxt-d;
+  animation-delay: 10s;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  background-color: #c0091e;
+  position: relative;
+}
+
 .secp1 {
   background-color: #ffedcf;
   height: 600px;
   border-radius: 72px 72px 0px 0px;
   margin-top: 0px;
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
 }
 
 .sec-precos{
@@ -743,4 +772,10 @@ mark{
 
 .t-bege{
   color: #ffedcf;
+}
+
+.desenho-erro {
+  width: 560px;
+  height: 415px;
+  margin-top: 100px;
 }
