@@ -1,5 +1,8 @@
 html, body { 
   scroll-behavior: smooth;
+  -webkit-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
 }
 
 body {
@@ -20,7 +23,7 @@ a, h1, h2, h3, p, table {
   color: #1c1313;
 }
 
-table{
+table {
   background-image:url("./borda-tabela.svg");
   background-repeat: no-repeat;
   background-size: 100%;  
@@ -30,35 +33,35 @@ table, th, td, tr{
   border-style: none;
 }
 
-td{
+td {
   height: 70px;
 }
 
-th{
+th {
   height: 50px;
 }
 
-b{
+b {
   font-weight: 600;
 }
 
-h1{
+h1 {
   font-size: 24px;
 }
 
-h2{
+h2 {
   font-size: 18px;
   margin: 0;
 }
 
-h3{
+h3 {
   font-size: 16px;
   color: #c0091e;
   text-decoration: underline 1.8px;
   margin: 10px 0px;
 }
 
-p{
+p {
   font-size: 18px;
   margin: 0;
 }
@@ -70,7 +73,7 @@ p{
   margin-top: 20px;
 }
 
-.logo{
+.logo {
   float: left;
   margin: 0px 20px;
   height: 35px;
@@ -87,7 +90,7 @@ p{
   font-size: 18px;
 }
 
-.foco{
+.foco {
   font-weight: bold;
 }
 
@@ -105,13 +108,14 @@ p{
   margin-top: 0px;
   display: flex;
   justify-content: space-evenly;
+  z-index: 2;
 }
 
 .sec2 {
   background-color: #ff9c7d;
   height: 700px;
   border-radius: 0px 0px 72px 72px;
-  z-index: -1;
+  z-index: 1;
   padding: 30px 0px 0px;
   display: flex;
   justify-content: space-evenly;
@@ -122,10 +126,15 @@ p{
   background-color: #7c0900;
   height: 470px;
   border-radius: 0px 0px 72px 72px;
-  z-index: -2;
+  z-index: 0;
+  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   padding-top: 72px;
+}
+
+.sec3sobre {
+  height: 600px;
 }
 
   .inicio-pags {
@@ -133,57 +142,73 @@ p{
     display: flex;
     flex-direction: row; 
     justify-content: center;
+    align-items: center;
   }
 
   .cx-type {
-    margin: 150px 10px 0px;
     max-width: 450px;
   }
 
   .type {
-    color:#0000;
-    background:
-      linear-gradient(-90deg,#ff0000 5px,#0000 0) 10px 0,
-      linear-gradient(#000000 0 0) 0 0;
-    background-size:calc(var(--n)*1ch) 200%;
-    -webkit-background-clip:padding-box,text;
-    background-clip:padding-box,text;
-    background-repeat:no-repeat;
     --n:1000;
+    color: #0000;
+    background:
+      linear-gradient(-90deg,#ff0000 5px,#00000000 0) 10px 0,
+      linear-gradient(#000000 0 0) 0 0;
+    background-size: calc(var(--n)*1ch) 200%;
+    -webkit-background-clip: padding-box, text;
+    background-clip: padding-box, text;
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
     animation: 
-    b .1s infinite steps(3),   
-    t calc(var(--n)*0.05s) steps(var(--n)) forwards;
+      b .1s infinite steps(3),   
+      t calc(var(--n)*0.02s) steps(var(--n)) forwards;
     font-family: "Cascadia Code", serif; 
     font-size: 18px; 
-    word-wrap: initial;
+    overflow-wrap: break-word;
   }
 
-  .type-v{
-    color:#c0091e;
+  .type-bege {
+    --n:1000;
+    color: #0000;
+    background:
+      linear-gradient(-90deg,#ff0000 5px,#00000000 0) 10px 0,
+      linear-gradient(#FEF1E6 0 0) 0 0;
+    background-size: calc(var(--n)*1ch) 200%;
+    -webkit-background-clip: padding-box, text;
+    background-clip: padding-box, text;
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
+    animation: 
+      b .1s infinite steps(3),   
+      t calc(var(--n)*0.02s) steps(var(--n)) forwards;
+    font-family: "Cascadia Code", serif; 
+    font-size: 18px; 
+    overflow-wrap: break-word;
   }
 
-  @keyframes t{
-    from {background-size:0 200%}
+  @keyframes t {
+    from { background-size: 0 200%; }
   }
-  @keyframes b{
-    50% {background-position:0 -100%,0 0}
+  @keyframes b {
+    50% { background-position: 0 -100%, 0 0; }
   }
 
-  .txt-contato{
+  .txt-contato {
     font-weight: bold;
     color: #c0091e;
     margin-top: 45px;
     width: 100%;
   }
 
-  .contato{
+  .contato {
     width: 200px;
     height: 30px;
     top: 10px;
     left: 200px;
   }
 
-  .ico-contato{
+  .ico-contato {
     color: #c0091e;
     text-decoration: none;
     position: relative;
@@ -191,7 +216,7 @@ p{
     float: left;
   }
 
-  .linkedin {
+  .linkedin{
     background-image: url("./linkedin.svg");
     width: 30px;
     height: 30px;
@@ -311,7 +336,6 @@ p{
     margin-top: -30px;
   }
 
-
   /*essa bomba aqui tá com problema mais uma vez*/
   .mais{
     float: right; 
@@ -332,6 +356,7 @@ p{
     margin-bottom: 80px;
     text-align: center;
     width: 300px;
+    font-size: 24px;
   }
 
   .seta{
@@ -446,7 +471,6 @@ mark{
   width: 585px;
   background-color: #1C1313;
   border-radius: 18px;
-  margin-top: 75px;
 }
 
 .area-botoes-tablet{
@@ -622,7 +646,7 @@ mark{
   width: 300px;
 }
 
-.rodape{
+.rodape {
   width: calc(100% - 140px);
   height: 140px;
   border-bottom-right-radius: 72px;
@@ -688,7 +712,7 @@ mark{
   border-radius: 16px;
   font-size: 18px;
   animation-name: btntxt;
-  animation-delay: 7.5s;
+  animation-delay: s;
   animation-duration: 0.4s;
   animation-fill-mode: forwards;
   background-color: #c0091e;
@@ -705,11 +729,16 @@ mark{
   border-radius: 16px;
   font-size: 18px;
   animation-name: btntxt-d;
-  animation-delay: 10s;
+  animation-delay: 5s;
   animation-duration: 0.4s;
   animation-fill-mode: forwards;
   background-color: #c0091e;
   position: relative;
+}
+
+.btn_bege {
+  background-color: #FFEDCF;
+  color: #c0091e;
 }
 
 .secp1 {
